@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title class="titleText">Calculator | Light mode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/light-mode-styles.css"
+      id="stylesMode"
+    />
+    <!-- Link to icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+  </head>
+  <body>
+    <!--Contenedor de la calculadora-->
+    <div class="calculator-body">
+      <!--Pantalla de resultados (top)-->
+      <div class="window-bar">
+        <div class="window-icon" id="close-button">×</div>
+        <div class="window-icon active" id="maximize-button">+</div>
+        <div class="window-icon" id="minimize-button">-</div>
+      </div>
+      <div class="display-box">
+        <div class="top-bar">
+          <i class="uil uil-moon" id="mode-button"></i>
+          <div id="historial">0</div>
+        </div>
+        <div id="output">0</div>
+      </div>
+      <!--Bloque de botones (bottom)-->
+      <div class="buttons-box">
+        <div class="control-row">
+          <div class="onoff-button c-button button on" id="onoff">off</div>
+          <div class="hist-button c-button button" id="history">hist</div>
+          <div class="c-button button" id="undo">undo</div>
+          <div class="c-button button" id="redo">redo</div>
+        </div>
+        <div class="first-row row">
+          <div class="clear-button o-button button" value="C" id="clear">C</div>
+          <div class="o-button button" value="±" id="plusminus">±</div>
+          <div class="percent-button o-button button" value="%" id="percent">
+            %
+          </div>
+          <div class="o-button button" value="/" id="division">÷</div>
+        </div>
+        <div class="second-row row">
+          <div class="n-button button" value="7" id="7">7</div>
+          <div class="n-button button" value="8" id="8">8</div>
+          <div class="n-button button" value="9" id="9">9</div>
+          <div class="o-button button" value="*" id="multiply">×</div>
+        </div>
+        <div class="third-row row">
+          <div class="n-button button" value="4" id="4">4</div>
+          <div class="n-button button" value="5" id="5">5</div>
+          <div class="n-button button" value="6" id="6">6</div>
+          <div class="o-button button" value="-" id="minus">-</div>
+        </div>
+        <div class="fourth-row row">
+          <div class="n-button button" value="1" id="1">1</div>
+          <div class="n-button button" value="2" id="2">2</div>
+          <div class="n-button button" value="3" id="3">3</div>
+          <div class="o-button button" value="+" id="plus">+</div>
+        </div>
+        <div class="last-row row">
+          <div class="n-button button" value="0" id="0">0</div>
+          <div class="decimal-button n-button button" value="." id="comma">
+            .
+          </div>
+          <div class="equal-button o-button button" value="=" id="equal">=</div>
+        </div>
+      </div>
+    </div>
+    <!-- On/Off button -->
+    <script src="./assets/js/onoff.js"></script>
+    <!-- Top buttons animations -->
+    <script src="./assets/js/top-buttons.js"></script>
+    <!-- Toggle styles -->
+    <script src="./assets/js/toggleMode.js"></script>
+    <!-- Operations -->
+    <script src="./assets/js/operations.js"></script>
+  </body>
+</html>
