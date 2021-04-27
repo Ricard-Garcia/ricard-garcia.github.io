@@ -3,45 +3,43 @@ FONT
 --------------------------------------------------------------- */
 @font-face {
   font-family: "Clash";
-  src: url("./_Design/_Fonts/ClashDisplay-Variable.ttf") format("truetype");
+  src: url("./design/fonts/ClashDisplay-Variable.ttf") format("truetype");
   font-weight: 200 700;
   font-style: normal;
 }
-
-
 
 /* ---------------------------------------------------------------
 GENERAL
 --------------------------------------------------------------- */
 
 /* General variables */
-:root{
-    /* Colors */
-    --darkColor: black;
-    --yellowColor: rgb(255, 183, 0);
-    --redColor: rgb(210, 43, 65);
-    --magentaColor: rgb(220, 0, 235);
-    --greenColor: rgb(0, 213, 194);
-    --blueColor: rgb(0, 89, 194);
-    --greyColor: #cccccc;
+:root {
+  /* Colors */
+  --darkColor: black;
+  --yellowColor: rgb(255, 183, 0);
+  --redColor: rgb(210, 43, 65);
+  --magentaColor: rgb(220, 0, 235);
+  --greenColor: rgb(0, 213, 194);
+  --blueColor: rgb(0, 89, 194);
+  --greyColor: #cccccc;
 
-    /*Color for event*/
-    --eventColor: rgb(0, 213, 194);
+  /*Color for event*/
+  --eventColor: rgb(0, 213, 194);
 
-    /* Stroke width */
-    --borderWidth: 3px;
+  /* Stroke width */
+  --borderWidth: 3px;
 
-    /* Font weights */
-    --extraLight: 200;
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --semiBold: 600;
-    --bold: 700;
+  /* Font weights */
+  --extraLight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
 
-    /* Measurements */
-    --sidebarWidth: 200px;
-    --margin: 30px;
+  /* Measurements */
+  --sidebarWidth: 200px;
+  --margin: 30px;
 }
 
 /* General styling */
@@ -82,8 +80,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
-
 /* ---------------------------------------------------------------
 SITE STYLING
 --------------------------------------------------------------- */
@@ -93,8 +89,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
 
 /* TOP PART >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -115,7 +109,7 @@ header {
   display: flex;
   margin-right: var(--margin);
   height: inherit;
-  transition: .5s
+  transition: 0.5s;
 }
 
 #month,
@@ -124,7 +118,7 @@ header {
   /* display: inline; */
   height: fit-content;
   transform: translateY(-30px);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 #month {
@@ -151,8 +145,6 @@ header {
   background-color: var(--darkColor);
 }
 
-
-
 /* MAIN PART >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 main {
@@ -162,30 +154,27 @@ main {
 
 /* Left */
 #sidebar {
-    min-width: var(--sidebarWidth);
-    margin-right: var(--margin);
-    display: flex;
-    /*align-items: flex-end;*/
-    flex-direction: column;
-    justify-content: space-between;
+  min-width: var(--sidebarWidth);
+  margin-right: var(--margin);
+  display: flex;
+  /*align-items: flex-end;*/
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
-
 /* Expired and reminders ---------------------------- */
-#expiredEventsTitle, #reminderTitle{
+#expiredEventsTitle,
+#reminderTitle {
   font-size: 14px;
   color: rgb(210, 43, 65);
   margin-bottom: 6px;
 }
 
-
-
 /* Expired events ---------------------------- */
-#expiredReminders{
+#expiredReminders {
   margin-top: 5px;
   padding: 10px 5px 5px 0;
-  flex-grow:1;
+  flex-grow: 1;
   max-width: 200px;
   max-height: 88px;
   border-top: 3px solid rgb(210, 43, 65);
@@ -194,19 +183,19 @@ main {
   font-size: 14px;
 }
 
-#expiredEventsContainer{
-  position:relative;
+#expiredEventsContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  flex-grow:0.18;
-  top:80px;
+  flex-grow: 0.18;
+  top: 80px;
   width: 100%;
 }
 
-#expiredEvents{
+#expiredEvents {
   margin-top: 5px;
   padding: 10px 5px 5px 0;
-  flex-grow:1;
+  flex-grow: 1;
   max-width: 200px;
   border-top: 3px solid rgb(210, 43, 65);
   overflow-y: auto;
@@ -214,61 +203,57 @@ main {
   font-size: 14px;
 }
 
-.workExpiredEvent{
+.workExpiredEvent {
   color: var(--greenColor);
 }
 
-.sportExpiredEvent{
+.sportExpiredEvent {
   color: var(--magentaColor);
 }
 
-.musicExpiredEvent{
+.musicExpiredEvent {
   color: var(--yellowColor);
 }
 
-.otherExpiredEvent{
+.otherExpiredEvent {
   color: var(--blueColor);
 }
 
-.defaultExpiredEvent{
-  color:black;
+.defaultExpiredEvent {
+  color: black;
 }
 
-
-
 /* Reminder ---------------------------- */
-#reminderContainer{
-  position:relative;
+#reminderContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  flex-grow:0.2;
+  flex-grow: 0.2;
   /* top:0px; */
   visibility: hidden;
   width: 100%;
   max-width: 200px;
 }
 
-.workReminder{
-    color: var(--greenColor);
+.workReminder {
+  color: var(--greenColor);
 }
 
-.sportReminder{
-    color: var(--magentaColor);
+.sportReminder {
+  color: var(--magentaColor);
 }
 
-.musicReminder{
-    color: var(--yellowColor);
+.musicReminder {
+  color: var(--yellowColor);
 }
 
-.otherReminder{
-    color: var(--blueColor);
+.otherReminder {
+  color: var(--blueColor);
 }
 
-.defaultReminder{
-    color:black;
+.defaultReminder {
+  color: black;
 }
-
-
 
 /* Checkboxes ---------------------------- */
 #eventTypes {
@@ -364,8 +349,6 @@ main {
   background-color: var(--blueColor);
 }
 
-
-
 /* Main right ---------------------------- */
 #mainRight {
   flex-grow: 1;
@@ -406,7 +389,7 @@ main {
   margin-bottom: 10px;
 }
 
-.weekdayAbr{
+.weekdayAbr {
   color: var(--darkColor);
   display: none; /* Hiden abbreviations */
 }
@@ -420,29 +403,29 @@ main {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.today .numberDiv{
+.today .numberDiv {
   background-color: yellow;
   box-shadow: 0 0 20px 20px yellow;
   border-radius: 50%;
 }
 
 /* Days divs ---------------------------- */
-.dayDiv{
-    padding: 15px 10px 15px 0;
-    border-top: var(--borderWidth) black solid;
-    transition: .4s;
-    display: flex;
-    align-items: flex-start;
-    min-width: 14.2857142857%;
-    max-height: 100px;
+.dayDiv {
+  padding: 15px 10px 15px 0;
+  border-top: var(--borderWidth) black solid;
+  transition: 0.4s;
+  display: flex;
+  align-items: flex-start;
+  min-width: 14.2857142857%;
+  max-height: 100px;
 }
 
-.currentMonthDay:hover *{
+.currentMonthDay:hover * {
   font-weight: var(--extraLight);
 }
 
 /* Today number */
-.today:hover .numberDiv{
+.today:hover .numberDiv {
   color: var(--darkColor);
 }
 
@@ -468,26 +451,27 @@ main {
 }
 
 /* Fixed width */
-.otherNumberDiv, .numberDiv{
+.otherNumberDiv,
+.numberDiv {
   min-width: 55px;
 }
 
 /* Events ---------------------------- */
 /* Events container */
-.eventsDiv{
-    flex-grow: 1;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    min-height: 100%;
-    /* Fade out effect */
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 90%);
-    mask-image: linear-gradient(to bottom, black 30%, transparent 90%);
+.eventsDiv {
+  flex-grow: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  min-height: 100%;
+  /* Fade out effect */
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 90%);
+  mask-image: linear-gradient(to bottom, black 30%, transparent 90%);
 }
 
 /* All events */
-.event{
+.event {
   min-width: 20px;
   font-size: 14px;
   font-weight: var(--bold);
@@ -495,17 +479,18 @@ main {
   transition: 0.2s;
 }
 
-.event:hover{
+.event:hover {
   font-weight: var(--bold);
 }
 
 /* Expired events */
-.expiredEvent, .expiredEvent:hover{
+.expiredEvent,
+.expiredEvent:hover {
   color: lightgray;
 }
 
 /* Type of events */
-.workEvent{
+.workEvent {
   color: var(--greenColor);
 }
 
@@ -574,7 +559,6 @@ main {
   );
 }
 
-
 /* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 footer {
   height: 50px;
@@ -584,16 +568,14 @@ footer {
 }
 
 /* Hide mobile checkboxes */
-#eventTypesMobile{
+#eventTypesMobile {
   display: none;
 }
 
 /* Hide mobile new event button */
-#newEventBtnMobile{
+#newEventBtnMobile {
   display: none;
 }
-
-
 
 /* MODALS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Background ---------------------------- */
@@ -680,7 +662,7 @@ footer {
   animation: scroll-text 6s linear 0s infinite normal;
 }
 
-.eventTitleFlow:hover{
+.eventTitleFlow:hover {
   /* Fade out effect */
   -webkit-mask-image: linear-gradient(
     to left,
@@ -746,7 +728,9 @@ select option:hover {
   width: 100%;
 }
 
-.checkboxLabel, .eventLabel, .eventLabelCheck{
+.checkboxLabel,
+.eventLabel,
+.eventLabelCheck {
   margin-bottom: 5px;
 }
 
@@ -772,17 +756,17 @@ select option:hover {
   border-bottom: var(--greyColor) solid var(--borderWidth);
 }
 
-#eventDescriptionLabelId{
+#eventDescriptionLabelId {
   margin-bottom: 5px;
 }
 
-.eventDescription{
-    width: 100%;
-    height: 140px;
-    background-color: rgba(0,0,0,0.05);
-    font-size: 20px;
-    font-weight: var(--light);
-    margin-bottom: 30px;
+.eventDescription {
+  width: 100%;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 20px;
+  font-weight: var(--light);
+  margin-bottom: 30px;
 }
 
 /* Modal buttons */
@@ -791,16 +775,16 @@ select option:hover {
   justify-content: space-between;
 }
 
-.modalBtn{
-    width: 49%;
-    height: 40px;
-    font-size: 20px;
-    font-weight: var(--semiBold);
-    background-color: white;
-    border: var(--darkColor) solid var(--borderWidth);
-    transition: .3s;
-    border-radius: 6px;
-    outline: none;
+.modalBtn {
+  width: 49%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: var(--semiBold);
+  background-color: white;
+  border: var(--darkColor) solid var(--borderWidth);
+  transition: 0.3s;
+  border-radius: 6px;
+  outline: none;
 }
 
 #saveNewEvent:hover {
@@ -873,8 +857,6 @@ textarea {
   background-color: var(--redColor);
 }
 
-#checkEventForm{
+#checkEventForm {
   height: fit-content;
 }
-
-
