@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght,CRSV,MONO@300..800,0,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <!-- Tab title -->
+    <title>jQuery Cheat Sheet</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/img/favicon.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-title" class="text">JQUERY CHEAT SHEET</div>
+    </header>
+
+    <main>
+      <div id="main-left">
+        <!-- Events -->
+        <div id="event-cat" class="category">EVENTS</div>
+        <!-- Content -->
+        <div id="event-content" class="content">
+          <div class="arrow-wrapper">
+            <div class="up-arrow-events up-arrow arrow">&uarr;</div>
+            <div class="down-arrow-events down-arrow arrow">&darr;</div>
+          </div>
+          <div id="events-wrapper" class="examples-wrapper">
+            <div id="events-examples" class="examples"></div>
+          </div>
+        </div>
+
+        <!-- Functions -->
+        <div id="functions-cat" class="category">FUNCTIONS</div>
+        <!-- Content -->
+        <div id="functions-conent" class="content">
+          <div class="arrow-wrapper">
+            <div class="up-arrow-functions up-arrow arrow">&uarr;</div>
+            <div class="down-arrow-functions down-arrow arrow">&darr;</div>
+          </div>
+          <div id="functions-wrapper" class="examples-wrapper">
+            <div id="functions-examples" class="examples"></div>
+          </div>
+        </div>
+
+        <!-- Selectors -->
+        <div id="selectors-cat" class="category">SELECTORS</div>
+        <!-- Content -->
+        <div id="selectors-content" class="content">
+          <div class="arrow-wrapper">
+            <div class="up-arrow-selectors up-arrow arrow">&uarr;</div>
+            <div class="down-arrow-selectors down-arrow arrow">&darr;</div>
+          </div>
+          <div id="selectors-wrapper" class="examples-wrapper">
+            <div id="selectors-examples" class="examples"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-right">
+        <div id="macro-panel" class="panel">
+          <div id="macro-top">
+            <!-- Vanilla -->
+            <label class="radio">
+              <span class="radio-input">
+                <input
+                  id="vanilla-radio"
+                  class="js-type"
+                  type="radio"
+                  name="js-radio"
+                  checked
+                />
+                <span class="radio-control"></span>
+              </span>
+              <span class="radio-label">Vanilla</span>
+            </label>
+            <!-- Extra  -->
+            <label class="radio">
+              <span class="radio-input">
+                <input
+                  id="jquery-radio"
+                  class="js-type"
+                  type="radio"
+                  name="js-radio"
+                />
+                <span class="radio-control"></span>
+              </span>
+              <span class="radio-label">jQuery</span>
+            </label>
+          </div>
+          <div id="macro-bottom">
+            <div id="macro-text">Code goes here</div>
+            <div id="macro-buttons">
+              <button id="clear-button" class="button">Clear</button>
+              <button id="run-button" class="button">Run</button>
+            </div>
+          </div>
+        </div>
+        <div id="output-panel" class="panel"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer-name" class="text footer-element">
+        <a href="https://github.com/Ricard-Garcia">Ricard Garcia</a>
+      </div>
+      <div id="footer-school" class="text footer-element">
+        <a href="https://www.assemblerschool.com/"
+          >Assembler | School of Software Engineering</a
+        >
+      </div>
+    </footer>
+  </body>
+  <!-- jQuery CDN -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="./assets/js/script.js"></script>
+  <script type="module" src="./assets/js/vanilla.js"></script>
+  <script type="module" src="./assets/js/jquery.js"></script>
+</html>
