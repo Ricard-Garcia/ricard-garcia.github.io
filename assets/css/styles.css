@@ -1,4 +1,13 @@
 /* -------------------------------------------------------------------------- */
+/*                                  VARIABLES                                 */
+/* -------------------------------------------------------------------------- */
+:root {
+  /* Colors */
+  --dark-color: rgb(7, 6, 18);
+  --light-color: rgb(250, 248, 224);
+}
+
+/* -------------------------------------------------------------------------- */
 /*                               GENERAL STYLING                              */
 /* -------------------------------------------------------------------------- */
 * {
@@ -7,12 +16,19 @@
   border: none;
   box-sizing: border-box;
   font-family: "Recursive", monospace;
-  color: rgb(250, 248, 224);
+  color: var(--light-color);
 }
 
 body {
   padding: 30px;
-  background-color: rgb(7, 6, 18);
+  background-color: var(--dark-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1;
 }
 
 h1 {
@@ -21,4 +37,15 @@ h1 {
 
 h3 {
   font-weight: 200;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+  height: 60px;
+}
+
+a:visited {
+  color: var(--light-color);
 }
