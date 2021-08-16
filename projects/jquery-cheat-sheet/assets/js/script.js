@@ -5,7 +5,7 @@ import { vanillaExamples } from "./vanilla.js";
 import { jQueryExamples } from "./jquery.js";
 export { blankMacroOutput, removeEventVanilla, removeEventJQuery };
 
-// console.log("Script JS file loaded!");
+console.log("Script JS file loaded!");
 
 /* -------------------------------------------------------------------------- */
 /*                              GENERAL VARIABLES                             */
